@@ -4,200 +4,6 @@
   <title>Harry's HTML Github Page</title>
   <meta charset="utf-8"/>
   <link href ="main.css" rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
-<style>
-  <style>
-
-  p.highlight { 
-  background: #08fcb5;
-}
-  
-  #firstname {
-  background-color: red;
-}
-  
-  div * {
-  background-color: rgb(204, 255, 255);
- }
-  
-  ul li {
-  background-color: f0f;
-}
-  
-  div > p {
-  background-color: rgba(219, 57, 178, 1);
-  } 
-  
-  * {
-  text-align: center;
-  color: red;
-}
-  
-  h1, h2, p {
-  text-align: left;
-  font-size: 4em 
-  color: maroon;
-}
- 
-a[target] {
-  border: 5cm solid red;
-}
-  
-a:visited {
-  color: hsl(304, 20%, 83%);
-}
-
-a:hover {
-  color: hotpink;
-}
-
-a:active {
-  color: hsl(120,100%,50%, 1);
-}
-  
-section + h4 {
-  background-color: green;
-}
-  
-main ~ p {
-  background-color: yellow;
-  border-color: red;
-  border-width: 5rem;
-}
-
-div {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid;
-  border-color: green;
-  padding: 50px;
-  margin: 20px;
-}
-h3 > p {
-  background-color: blue
-}
-
-#divEdit {
-  border: 2in solid red;
-  padding: 10px;
-  border-radius: 50px 20px;
-}
- 
-h4 {
-  font-size: 150%;
-}
-h1  {
-  border: 1px solid black;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  background-color: lightblue;
-   
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-      
-  height: 200px;
-  width: 50%;
-  position: absolute;
-   
-  text-decoration: overline;
-}
-        
-h2 {
-  position: static;
-  border: 1px solid black;
-  margin: 25px 50px 75px 100px;
-  padding: 25px 50px 75px 100px;
-  background-color: lightblue;
-        
-  text-decoration: line-through;
-}
-        
-h3 {
-  width: 300px;
-  margin: auto;
-  position: relative;
-  border: 1px solid red;
-        
-  text-decoration: underline;
-}
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-
-p.ex2 {
-  display: inline;
-  max-width: 150px;
-}
-p.ex3 {
-  display: block;
-   min-width: 80px;
-}
-
-flex-container {
-  display: flex;
-  
-  flex-flow:row wrap;
-  
-  justify-content: space-around;
- }
-
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  }
-  
-  .wrapper > * {
-    flex: 1 100%;
-}
-  
-@media all && (min-width: 600px) {
-  .aside { flex: 1 auto; }
-}
- 
-@media all && (min-width: 800px) {
-  .main {flex: 2 0px; }
-  .aside-1 {order: 1; }
-  .main    {order: 2; }
-  .aside-2 {order 3;  }
-  .footer  {order: 4; }
-}
-  
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-}
-  
-@media all && (max=width: 200px) {
-  .navgiation {
-    justify-content: space-around;
-  }
-}
-  
-@media all && (max-width:500px) {
-  .navigation {
-    flex-direction: column;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
- 
-<style>
- 
-<style>
 </head>
 
 <body>
@@ -207,17 +13,9 @@ flex-container {
   </nav>
   
   <header class="page-header">
-    <h1 style="color:blue;text-align:center;"><strong>Welcome to my Github Page!</strong></h1>
+    <h1><strong>Welcome to my Github Page!</strong></h1>
   </header>
 
-  <ul class="flex-container">
-  <li class="flex-item">A</li>
-  <li class="flex-item">B</li>
-  <li class="flex-item">C</li>
-  <li class="flex-item">D</li>
-  <li class="flex-item">E</li>
-  <li class="flex-item">F</li>
-</ul>
   <main role = "main">
     <h2>Who Am I?</h2>
     <figure>
@@ -225,16 +23,16 @@ flex-container {
     <figcaption>A Dashing Selfie at the abandoned Royal Hotel</figcaption>
     </figure>
     
-    <p class="highlight"> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
-    <p id="firstname"> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
+    <p> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
+    <p> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
   </main>
 
-  <h3 id="divEdit">Some Places I've visited</h3>
+  <h3>Some Places I've visited</h3>
     <figure>
       <img src="HalfMoonTunnel.jpg" alt="Half Moon Tunnel">
     </figure>
       <aside>
-        <p class="ex1"><em>Half Moon Tunnel</em></p>
+        <p><em>Half Moon Tunnel</em></p>
       </aside>
     
     <picture>
@@ -255,32 +53,7 @@ flex-container {
    </section>
 
 <hr>
-  <div class="wrapper">
-  <header class="header">The word at the top of the boxy thingy</header>
-  <article class="main">
-    <p>  aslkjhdaskjsdhal askldjhaskldjhaslkd jas hlkdsajh alskjdhlka haskljdh kalsdjhlask jhdaskldjhask </p>  
-  </article>
-  <aside class="aside aside-1">Ominous yellow rectangle</aside>
-  <aside class="aside aside-2">Ominous Pink rectangle</aside>
-  <footer class="footer">The word at the bottom of this thing... in greeen</footer>
-</div>
 
-<hr>
-  
-  <div class="grid-container">
-  <div class="grid-item">A</div>
-  <div class="grid-item">G</div>
-  <div class="grid-item">D</div>  
-  <div class="grid-item">A</div>
-  <div class="grid-item">W</div>
-  <div class="grid-item">G</div>  
-  <div class="grid-item">C</div>
-  <div class="grid-item">#</div>
-  <div class="grid-item">K</div>  
-</div>
-  
- 
-<hr>
    <section>
       <h4>My first piece of code ever</h4>
       <div>
@@ -300,7 +73,7 @@ flex-container {
 
   <section>
     <h4>Random Haiku Plagiarized from Online<h4>
-    <p class="highlight">
+    <p>
     Haikus are easy<br>
     But sometimes they don’t make sense<br>
     Refrigerator
@@ -336,15 +109,6 @@ flex-container {
   <canvas width="300" height="300">
     An alternative text describing what your canvas displays.
   </canvas>
- 
-  <hr>
-  <ul class="navigation">
-  <li><a href="#">Oh</a></li>
-  <li><a href="#">My</a></li>
-  <li><a href="#">Goodness</a></li>
-  <li><a href="#">Gracious</a></li>
-
-  </ul>
   
   <hr>
   
@@ -428,7 +192,7 @@ flex-container {
        type="button"
        value="Add to favorites">
     
-  <p class="dotted">Choose your monster's features:</p>
+  <p>Choose your monster's features:</p>
 
 <div>
   <input type="checkbox" id="scales" name="scales"
@@ -441,7 +205,7 @@ flex-container {
   <label for="horns">Horns</label>
 </div>
 
-<p class="dashed">Choose your monster's colors:</p>
+<p>Choose your monster's colors:</p>
 
 <div>
     <input type="color" id="head" name="head"
@@ -630,9 +394,8 @@ I'm burned out from this Lab...
 
 <hr>
    <footer>
-        <p class="ex2">@ 2021 Harry</p>
+        <p>@ 2021 Harry</p>
    </footer>  
   </body>
 
-/* This class is suffering */
 </html>
