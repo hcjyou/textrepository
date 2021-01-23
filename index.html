@@ -3,7 +3,23 @@
 <head>
   <title>Harry's HTML Github Page</title>
   <meta charset="utf-8"/>
-  <link href="main.css" rel="stylesheet">
+  <link href ="main.css" rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+<style>
+  @font-face {
+  font-family: pottaOne;
+  src: url(PottaOne-Regular.ttf);
+}
+  
+body {
+        color: blue;
+        font-family: pottaOne;
+}
+  
+  p.highlight { 
+  background: #08fcb5;
+}
+ 
+<style>
 </head>
 
 <body>
@@ -13,9 +29,17 @@
   </nav>
   
   <header class="page-header">
-    <h1><strong>Welcome to my Github Page!</strong></h1>
+    <h1 style="color:blue;text-align:center;"><strong>Welcome to my Github Page!</strong></h1>
   </header>
 
+  <ul class="flex-container">
+  <li class="flex-item">A</li>
+  <li class="flex-item">B</li>
+  <li class="flex-item">C</li>
+  <li class="flex-item">D</li>
+  <li class="flex-item">E</li>
+  <li class="flex-item">F</li>
+</ul>
   <main role = "main">
     <h2>Who Am I?</h2>
     <figure>
@@ -23,16 +47,16 @@
     <figcaption>A Dashing Selfie at the abandoned Royal Hotel</figcaption>
     </figure>
     
-    <p> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
-    <p> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
+    <p class="highlight"> My name is <i>Harry You</i> and I’m a 3rd year undergraduate at UCSD. My hobbies include<span>Photography</span>, <span>Urban Exploration</span>, and <span>Building Gunpla!</span></p>
+    <p id="firstname"> To learn more about me, visit: <a href="https://www.youtube.com/watch?v=wpV-gGA4PSk">My Biography</a>
   </main>
 
-  <h3>Some Places I've visited</h3>
+  <h3 id="divEdit">Some Places I've visited</h3>
     <figure>
       <img src="HalfMoonTunnel.jpg" alt="Half Moon Tunnel">
     </figure>
       <aside>
-        <p><em>Half Moon Tunnel</em></p>
+        <p class="ex1"><em>Half Moon Tunnel</em></p>
       </aside>
     
     <picture>
@@ -53,7 +77,32 @@
    </section>
 
 <hr>
+  <div class="wrapper">
+  <header class="header">The word at the top of the boxy thingy</header>
+  <article class="main">
+    <p>  aslkjhdaskjsdhal askldjhaskldjhaslkd jas hlkdsajh alskjdhlka haskljdh kalsdjhlask jhdaskldjhask </p>  
+  </article>
+  <aside class="aside aside-1">Ominous yellow rectangle</aside>
+  <aside class="aside aside-2">Ominous Pink rectangle</aside>
+  <footer class="footer">The word at the bottom of this thing... in greeen</footer>
+</div>
 
+<hr>
+  
+  <div class="grid-container">
+  <div class="grid-item">A</div>
+  <div class="grid-item">G</div>
+  <div class="grid-item">D</div>  
+  <div class="grid-item">A</div>
+  <div class="grid-item">W</div>
+  <div class="grid-item">G</div>  
+  <div class="grid-item">C</div>
+  <div class="grid-item">#</div>
+  <div class="grid-item">K</div>  
+</div>
+  
+ 
+<hr>
    <section>
       <h4>My first piece of code ever</h4>
       <div>
@@ -73,7 +122,7 @@
 
   <section>
     <h4>Random Haiku Plagiarized from Online<h4>
-    <p>
+    <p class="highlight">
     Haikus are easy<br>
     But sometimes they don’t make sense<br>
     Refrigerator
@@ -109,6 +158,15 @@
   <canvas width="300" height="300">
     An alternative text describing what your canvas displays.
   </canvas>
+ 
+  <hr>
+  <ul class="navigation">
+  <li><a href="#">Oh</a></li>
+  <li><a href="#">My</a></li>
+  <li><a href="#">Goodness</a></li>
+  <li><a href="#">Gracious</a></li>
+
+  </ul>
   
   <hr>
   
@@ -192,7 +250,7 @@
        type="button"
        value="Add to favorites">
     
-  <p>Choose your monster's features:</p>
+  <p class="dotted">Choose your monster's features:</p>
 
 <div>
   <input type="checkbox" id="scales" name="scales"
@@ -205,7 +263,7 @@
   <label for="horns">Horns</label>
 </div>
 
-<p>Choose your monster's colors:</p>
+<p class="dashed">Choose your monster's colors:</p>
 
 <div>
     <input type="color" id="head" name="head"
@@ -394,8 +452,9 @@ I'm burned out from this Lab...
 
 <hr>
    <footer>
-        <p>@ 2021 Harry</p>
+        <p class="ex2">@ 2021 Harry</p>
    </footer>  
   </body>
 
+/* This class is suffering */
 </html>
